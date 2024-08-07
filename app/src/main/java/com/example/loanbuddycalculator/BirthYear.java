@@ -48,7 +48,7 @@ public class BirthYear extends AppCompatActivity {
                     editor.putBoolean(USER_GUIDE_SHOWN_KEY, false); // Set user guide shown to false
                     editor.apply();
 
-                    Intent intent = new Intent(BirthYear.this, UserGuide.class); // Change to your user guide activity
+                    Intent intent = new Intent(BirthYear.this, UserGuide.class);
                     startActivity(intent);
                     finish();
                 } else {

@@ -2,6 +2,7 @@ package com.example.loanbuddycalculator;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
@@ -19,6 +20,7 @@ public class HousingAmortization extends AppCompatActivity {
     private TextView loanAmountTextView, interestRateTextView, numRepaymentsTextView;
 
 
+    @SuppressLint("MissingInflatedId")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
