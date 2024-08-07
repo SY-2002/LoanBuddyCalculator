@@ -1,0 +1,47 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- ImageView for displaying the guide images as background -->
+    <ImageView
+        android:id="@+id/userGuideIcon"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY"
+        android:src="@drawable/guide_image_1"
+        android:contentDescription="User Guide Image" />
+
+    <!-- Buttons at the bottom -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <!-- Back Button -->
+        <Button
+            android:id="@+id/backButton1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Back"
+            android:visibility="gone" />
+
+        <!-- Home Button -->
+        <Button
+            android:id="@+id/homeButton1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Home"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp" />
+
+        <!-- Next Button -->
+        <Button
+            android:id="@+id/nextButton1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Next" />
+
+    </LinearLayout>
+</FrameLayout>

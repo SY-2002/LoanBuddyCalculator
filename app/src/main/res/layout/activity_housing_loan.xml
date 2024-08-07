@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="#ebfffb"
+    tools:context=".HousingLoan">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Housing Loan Calculator"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_gravity="center"
+        android:layout_marginBottom="16dp"/>
+
+    <EditText
+        android:id="@+id/editTextLoanAmount"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="Loan Amount"
+        android:background="@drawable/border_background"
+        android:inputType="numberDecimal"/>
+
+    <EditText
+        android:id="@+id/editTextInterestRate"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="16dp"
+        android:hint="Interest Rate (e.g. 5 for 5%)"
+        android:background="@drawable/border_background"
+        android:inputType="numberDecimal"/>
+
+    <EditText
+        android:id="@+id/editTextNumberOfRepayments"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="16dp"
+        android:hint="Number of Repayments (max 420 months)"
+        android:background="@drawable/border_background"
+        android:inputType="number"/>
+
+    <TextView
+        android:id="@+id/editTextLoanStartDate"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="16dp"
+        android:hint="Year/Month/Day"
+        android:gravity="center_vertical"
+        android:padding="10dp"
+        android:background="@drawable/border_background"
+        android:clickable="true"
+        android:focusable="false"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="16dp">
+
+        <Button
+            android:id="@+id/buttonCalculate"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Calculate"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#01b695"
+            android:padding="12dp"
+            android:textSize="16sp"/>
+
+        <Button
+            android:id="@+id/buttonReset"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Reset"
+            android:layout_marginStart="16dp"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#01b695"
+            android:padding="12dp"
+            android:textSize="16sp"/>
+
+        <Button
+            android:id="@+id/backHome"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Back Home"
+            android:layout_marginStart="16dp"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#01b695"
+            android:padding="12dp"
+            android:textSize="16sp"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textViewResults"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:textSize="18sp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="16dp">
+
+        <Button
+            android:id="@+id/buttonHousingAmortizationSchedule"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Amortization Schedule"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#01b695"
+            android:padding="12dp"
+            android:textSize="16sp"/>
+
+        <Button
+            android:id="@+id/buttonInterest"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Amount of Interest"
+            android:layout_marginTop="16dp"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#01b695"
+            android:padding="12dp"
+            android:textSize="16sp"/>
+    </LinearLayout>
+</LinearLayout>
